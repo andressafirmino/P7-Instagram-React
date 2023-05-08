@@ -1,4 +1,7 @@
 export default function Post(props) {
+
+
+
     return (
         <div>
             <div class="post" data-test= "post">
