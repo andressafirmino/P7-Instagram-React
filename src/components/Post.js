@@ -20,7 +20,7 @@ export default function Post(props) {
 
     function Like() {
         if (heart = <ion-icon name="heart-outline"></ion-icon>) {
-            let newLike = <ion-icon name="heart"></ion-icon>
+            let newLike = <ion-icon name="heart" style={{color: 'red'}}></ion-icon>
             setLike(newLike);
         }
     }
