@@ -1,7 +1,7 @@
 export default function Post(props) {
     return (
         <div>
-            <div class="post">
+            <div class="post" data-test= "post">
                 <div class="topo">
                     <div class="usuario">
                         <img src={props.imagem} alt="meowed" />
@@ -13,7 +13,7 @@ export default function Post(props) {
                 </div>
 
                 <div class="conteudo">
-                    <img src={props.conteudo} alt="gato-telefone" />
+                    <img src={props.conteudo} alt="gato-telefone" data-teste="post-image"/>
                 </div>
 
                 <div class="fundo">
