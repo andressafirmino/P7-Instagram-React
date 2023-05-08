@@ -1,13 +1,32 @@
+import { useState } from "react";
+
 export default function Post(props) {
 
-    // function salva() {
-        
-    // }
+    let [icone, setIcone] = useState(<ion-icon name="bookmark-outline"></ion-icon>);
 
+    function salva() {
 
+        if (icone = <ion-icon name="bookmark-outline"></ion-icon>) {
+            let novoIcone = <ion-icon name="bookmark"></ion-icon>
+            setIcone(novoIcone);
+        } else if (icone = <ion-icon name="bookmark"></ion-icon>) {
+            let novoIcone = <ion-icon name="bookmark-outline"></ion-icon>;
+            setIcone(novoIcone);
+        }
+
+    }
+
+    let [heart, setLike] = useState(<ion-icon name="heart-outline"></ion-icon>)
+
+    function Like() {
+        if (heart = <ion-icon name="heart-outline"></ion-icon>) {
+            let newLike = <ion-icon name="heart"></ion-icon>
+            setLike(newLike);
+        }
+    }
     return (
         <div>
-            <div class="post" data-test= "post">
+            <div class="post" data-test="post">
                 <div class="topo">
                     <div class="usuario">
                         <img src={props.imagem} alt="meowed" />
@@ -19,18 +38,18 @@ export default function Post(props) {
                 </div>
 
                 <div class="conteudo">
-                    <img src={props.conteudo} alt="gato-telefone" data-teste="post-image"/>
+                    <img src={props.conteudo} alt="gato-telefone" data-teste="post-image" />
                 </div>
 
                 <div class="fundo">
                     <div class="acoes">
-                        <div>
-                            <ion-icon name="heart-outline"></ion-icon>
+                        <div class="curt">
+                            <div onClick={Like} data-test="like-post">{heart}</div>
                             <ion-icon name="chatbubble-outline"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
-                        <div >
-                            <ion-icon name="bookmark-outline"></ion-icon>
+                        <div onClick={salva} data-test="save-post">
+                            {icone}
                         </div>
                     </div>
 

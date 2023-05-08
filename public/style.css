@@ -187,6 +187,11 @@ body {
   font-size: 24px;
 }
 
+.post .fundo .acoes .curt{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
 .post .fundo .acoes div:first-child ion-icon {
   margin-right: 6px;
 }
