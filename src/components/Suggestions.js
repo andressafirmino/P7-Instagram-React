@@ -1,6 +1,7 @@
 import Suggestion from "./Suggestion"
 
 export default function Suggestions() {
+    
     return (
         <div>
             <div class="sugestoes">
@@ -16,4 +17,22 @@ export default function Suggestions() {
             </div>
         </div>
     )
+
+    // const suggest = [
+    //     {img:'assets/img/bad.vibes.memes.svg', name:'bad.vibes.memes', rz:'Segue você' },
+    //     {img:'assets/img/chibirdart.svg', name:'chibirdart', rz:'Segue você'},
+    //     {img:'assets/img/razoesparaacreditar.svg', name:'razoesparaacreditar', rz:'Novo no Instagram' },
+    //     {img:'assets/img/adorable_animals.svg', name:'adorable_animals', rz:'Segue você'},
+    //     {img:'assets/img/smallcutecats.svg', name:'smallcutecats', rz:'Segue você'}
+    // ] 
+    // return (
+    //     <div>
+    //         <div class="sugestoes">
+    //             <div class="titulo">
+    //                 Sugestões para você
+    //                 <div>Ver tudo</div>
+    //             </div>
+    //             {suggest.map( <Suggestion imagem={sugg.img} name={sugg.nome} razao={sugg.rz}/> )}               
+    //         </div>
+    //     </div>
 }
