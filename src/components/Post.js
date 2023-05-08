@@ -23,7 +23,7 @@ export default function Post(props) {
                             <ion-icon name="chatbubble-outline"></ion-icon>
                             <ion-icon name="paper-plane-outline"></ion-icon>
                         </div>
-                        <div>
+                        <div onClick={salva}>
                             <ion-icon name="bookmark-outline"></ion-icon>
                         </div>
                     </div>
